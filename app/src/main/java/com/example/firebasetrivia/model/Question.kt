@@ -3,7 +3,7 @@ package com.example.firebasetrivia.model
 import android.os.Parcelable
 import kotlinx.parcelize.Parcelize
 
-// This class will represent the question model.
+
 /**
  * This class will represent the question model.
  * @param id The id of the question.

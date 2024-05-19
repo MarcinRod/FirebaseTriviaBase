@@ -11,7 +11,8 @@ import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
 import com.example.firebasetrivia.databinding.ActivityMainBinding
 
-
+// Main activity for the app that hosts the navigation graph
+// It also listens for destination changes to update the action bar
 class MainActivity : AppCompatActivity(), NavController.OnDestinationChangedListener {
 
     private lateinit var binding: ActivityMainBinding

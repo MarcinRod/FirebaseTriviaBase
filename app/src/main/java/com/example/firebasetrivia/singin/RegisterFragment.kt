@@ -10,7 +10,10 @@ import androidx.navigation.fragment.findNavController
 import com.example.firebasetrivia.R
 import com.example.firebasetrivia.databinding.FragmentRegisterBinding
 import com.example.firebasetrivia.helpers.KeyboardHelper
-
+/**
+ * Fragment for the register screen.
+ * It will display the register form and handle the register process.
+ */
 class RegisterFragment : Fragment() {
     // Declare the binding and viewmodel variables
     private lateinit var binding: FragmentRegisterBinding

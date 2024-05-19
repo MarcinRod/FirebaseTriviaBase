@@ -8,6 +8,10 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import com.example.firebasetrivia.databinding.FragmentUsernameBinding
 
+/**
+ * Fragment for the username screen.
+ * It allows the user to enter a username and submit it.
+ */
 class UsernameFragment : Fragment() {
     // Declare the binding and viewmodel variables
     private lateinit var binding: FragmentUsernameBinding
