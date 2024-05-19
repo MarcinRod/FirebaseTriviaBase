@@ -34,7 +34,6 @@
             android:layout_marginEnd="32dp"
             android:layout_marginBottom="16dp"
             android:hint="@string/email_hint"
-            app:errorEnabled="@{viewModel.emailError}"
             android:visibility="visible"
             app:boxBackgroundMode="outline"
             app:boxStrokeWidth="1dp"
@@ -51,7 +50,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textEmailAddress"
-                android:text="@={viewModel.email}"
                 tools:text="email@domain.com" />
 
 
@@ -66,7 +64,6 @@
             android:layout_marginEnd="32dp"
             android:layout_marginBottom="32dp"
             android:hint="@string/password_hint"
-            app:errorEnabled="@{viewModel.passwordError}"
             android:visibility="visible"
             app:boxBackgroundMode="outline"
             app:boxStrokeWidth="1dp"
@@ -83,7 +80,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textPassword"
-                android:text="@={viewModel.password}"
                 tools:text="myPassword" />
 
 
@@ -116,7 +112,6 @@
         <ProgressBar
             android:id="@+id/progressBar"
             style="?android:attr/progressBarStyle"
-            visibility="@{viewModel.processing ? View.VISIBLE : View.GONE}"
             android:layout_width="60dp"
             android:layout_height="60dp"
             app:layout_constraintBottom_toBottomOf="parent"

@@ -61,7 +61,7 @@
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="8dp"
-            android:progress="@{(100*viewModel.score/viewModel.maxScore)}"
+
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/question_title" />
@@ -90,7 +90,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:text="@{viewModel.question.question}"
+
             app:layout_constraintEnd_toEndOf="@+id/question_timer"
             app:layout_constraintStart_toStartOf="@+id/question_timer"
             app:layout_constraintTop_toBottomOf="@+id/question_timer"
@@ -110,28 +110,27 @@
                 android:id="@+id/answer_a"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@{viewModel.question.options[0]}"
+
                 tools:text="Option A" />
 
             <RadioButton
                 android:id="@+id/answer_b"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@{viewModel.question.options[1]}"
                 tools:text="Option B" />
 
             <RadioButton
                 android:id="@+id/answer_c"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@{viewModel.question.options[2]}"
+
                 tools:text="Option C" />
 
             <RadioButton
                 android:id="@+id/answer_d"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@{viewModel.question.options[3]}"
+
                 tools:text="Option D" />
         </RadioGroup>
 
@@ -141,7 +140,6 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="-4dp"
             android:fontFamily="sans-serif-condensed-light"
-            android:text="@{viewModel.score}"
             app:layout_constraintBottom_toTopOf="@+id/question_timer"
             app:layout_constraintEnd_toEndOf="@+id/question_timer"
             tools:text="0:30" />
