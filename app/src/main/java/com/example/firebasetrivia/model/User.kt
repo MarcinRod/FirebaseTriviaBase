@@ -18,7 +18,7 @@ data class User(
     val username: String = "",
     val ranking: Ranking = Ranking(),
     val lastSeen: Long = System.currentTimeMillis(),
-    val answeredQuestions: List<String> = emptyList()
+    val answeredQuestions: List<Int> = emptyList()
 ) : Parcelable {
     @IgnoredOnParcel
     val lastSeenString: String =
