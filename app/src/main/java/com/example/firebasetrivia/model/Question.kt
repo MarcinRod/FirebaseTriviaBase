@@ -12,6 +12,6 @@ import kotlinx.parcelize.Parcelize
  * @param options The list of answers for the question.
  */
 @Parcelize
-data class Question(val id: Int, val question: String, val answer: String, val options: List<String>) :
+data class Question(val id: Int = -1, val question: String = "", val answer: String = "", val options: List<String> = emptyList()) :
     Parcelable {
 }
